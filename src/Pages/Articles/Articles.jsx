@@ -128,7 +128,7 @@ export default function Articles() {
                             className="w-20 h-auto rounded"
                             alt=""
                           />
-                          <Link to={"/"}>
+                          <Link to={`articles/${item.id}`}>
                             {" "}
                             <p className="font-bold">{item.title}</p>
                           </Link>
