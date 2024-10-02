@@ -1,0 +1,37 @@
+.get-in-touch {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 14px 59px rgba(0, 0, 0, 0.12);
+}
+
+.get-in-touch li {
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #F5F5F5;
+    height: 55px;
+    padding-left: 20px;
+    background: #F5F5F5;
+    outline: #F14D5D !important;
+}
+
+.form-control:focus {
+    border-color: #F14D5D !important;
+    background: #fff !important;
+}

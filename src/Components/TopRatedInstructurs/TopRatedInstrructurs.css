@@ -1,0 +1,81 @@
+.btn-main-outline {
+  background: transparent;
+  color: #f14d5d;
+  border-color: #f14d5d;
+}
+
+.btn-main-outline:hover {
+  background-color: #f14d5d;
+  color: #fff;
+}
+
+.teachers-box {
+  border: 1px solid #eee;
+  background: transparent;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.img-container {
+  margin-top: -50px;
+  padding: 20px 20px 10px 20px;
+  overflow: hidden;
+}
+
+.teachers-box img {
+  transform: translateY(-15px);
+  transition: all 0.4s ease;
+  border-radius: 100%;
+}
+
+.teachers-box .content {
+  padding: 0px 30px 15px 30px;
+}
+
+.course-datils {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.teachers-box:hover {
+  background: #fff;
+  box-shadow: 0 14px 59px rgba(0, 0, 0, 0.12);
+  border: 1px solid #fff;  
+}
+
+.social-media {
+  background-color: #f14d5d;
+  transition: all 0.4s ease;
+  padding: 2px 20px;
+  border-radius: 5px 0px 0px 5px;
+  transition: all 0.4s ease;
+  right: -95px;
+  cursor: pointer;
+ 
+}
+
+.social-media i:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.teachers-box:hover .social-media {
+  right: 0;
+}
+
+
+.social-media i {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+@media (max-width : 992px) {
+  .img-container {
+    margin-top: unset !important;
+  }
+}
+
+

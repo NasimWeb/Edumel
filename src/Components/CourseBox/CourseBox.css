@@ -1,0 +1,80 @@
+.course-box {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 14px 59px;
+    cursor: pointer;
+}
+
+.course-box .price {
+    background-color: #F14D5D;
+}
+
+.review {
+    color: #777;
+    font-size: 13px;
+}
+
+.details {
+    color: #777;
+    font-size: 15px;
+}
+
+.hover-content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 14px 59px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    padding: 30px 25px 0px 30px;
+    transition: all 0.4s ease;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.hover-content .price {
+    font-weight: 700;
+    font-size: 30px;
+    color: #F14D5D;
+    background-color: #fff;
+}
+
+
+.hover-content .course-title {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.hover-content p {
+    color: #77838F;
+}
+
+.btn-sm {
+    padding: 8px 22px;
+}
+
+.btn-grey {
+    border-color: #ddd;
+    color: #222;
+    background: #ddd;
+}
+
+.btn-grey:hover {
+    border-color: #F14D5D;
+    color: #fff;
+    background: #F14D5D;
+}
+
+.course-box:hover .hover-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.rating i {
+    color: #FFC78B !important;
+}
+
+

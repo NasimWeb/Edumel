@@ -1,0 +1,17 @@
+.property-box {
+    padding: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.property-box:hover {
+    background-color: #fff;
+    box-shadow: 0 14px 59px rgba(0, 0, 0, 0.12);
+}
+
+.property-box p {
+    color: #77838F;
+    font-family: var(--theme-secondary-font);
+    line-height: 30px;
+    font-size: 16px;
+}

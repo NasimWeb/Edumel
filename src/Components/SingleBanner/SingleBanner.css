@@ -1,0 +1,21 @@
+.page-header {
+    padding: 90px 0px;
+    background: #F4F5F8;
+    position: relative;
+    background: url(../../assets/images/page-title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+.page-header:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 31, 66, 0.9);
+    z-index: -1;
+}

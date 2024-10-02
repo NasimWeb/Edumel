@@ -1,0 +1,8 @@
+.activeTab {
+    color: #000 !important;
+    border-bottom: 2px solid #F14D5D;
+}
+
+.tabs li {
+    transition: all .4s ease 0s;
+}

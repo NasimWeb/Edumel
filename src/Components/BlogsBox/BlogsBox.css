@@ -1,0 +1,16 @@
+.blog-box {
+    transition: all 0.4s ease;
+    background: #F5F5F5;
+}
+
+.blog-box:hover {
+    box-shadow: 0 14px 59px rgba(0, 0, 0, 0.12);
+    border-color: transparent;
+}
+
+
+.blog-box .blog-img img {
+    width: 100%;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}

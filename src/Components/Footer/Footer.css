@@ -1,0 +1,44 @@
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+footer .footer-link {
+    transition: all 0.4s ease;
+    position: relative;
+    width: fit-content;
+}
+
+.edumel {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.edumel:hover {
+    color: #fff;
+} 
+
+footer .footer-link:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    transition: all 0.4s ease;
+
+}
+
+footer .footer-link:hover {
+    color: #fff !important;
+    text-decoration: solid;
+}
+
+
+footer .footer-link:hover::before {
+    opacity: 1 !important;
+    width: 100% ;
+}
+
