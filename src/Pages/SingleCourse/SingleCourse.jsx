@@ -14,7 +14,15 @@ function SingleCourse() {
   const { data, isLoading, isError, error } = useCourse(id);
   const [activeTab, setActiveTab] = useState("Overview");
 
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return (
+    <div className="flex justify-center align-center" style={{height : '100vh'}}>
+    <div class="loader">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+      </div>
+  );
 
   return (
     <>

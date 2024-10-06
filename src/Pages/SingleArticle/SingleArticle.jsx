@@ -14,7 +14,16 @@ function SingleArticle() {
   const { data, isLoading, isError, error } = useArticle(id);
   const [activeTab, setActiveTab] = useState("Overview");
 
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return (
+
+    <div className="flex justify-center align-center" style={{height : '100vh'}}>
+  <div class="loader">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+  </div>
+    </div>
+  )
 
   return (
     <>
@@ -229,7 +238,7 @@ function SingleArticle() {
           <aside>
             <div className="bg-white border border-gray-100 p-10">
               <img
-                src="https://etacs.com.au/wp-content/uploads/2024/02/08.jpg"
+                src="https://static.wixstatic.com/media/317902_d6bdfa5f0c484e47ab10f948d254b8ac~mv2.jpg/v1/fill/w_758,h_606,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/317902_d6bdfa5f0c484e47ab10f948d254b8ac~mv2.jpg"
                 alt=""
               />
               <div className="mt-5 flex flex-wrap justify-between  lg:flex-nowrap gap-3 ">

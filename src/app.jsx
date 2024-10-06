@@ -13,6 +13,7 @@ export function App() {
 
   const [isLogin, setIsLogin] = useState(false);
   const [userInfo, setuserInfo] = useState({});
+  const [isLoading , setIsLoading] = useState(true)
   const loginUser = () => {};
   const logOut = () => {};
 
@@ -34,7 +35,13 @@ export function App() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener('DOMContentLoaded', () => {
+       setIsLoading(false)
+    })
     return () => window.removeEventListener("scroll", handleScroll);
+
+
+
   }, []);
 
 
@@ -46,6 +53,16 @@ export function App() {
     });
   };
 
+
+if(isLoading) {
+  <div className="flex justify-center align-center" style={{height : '100vh'}}>
+  <div class="loader">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+  </div>
+  </div>
+}
 
 
   return (

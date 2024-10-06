@@ -25,63 +25,63 @@ export default function Register() {
     <div>
       <Topbar />
       <Navbar />
-      <SingleBanner title={"ثبت نام"} curRoute={"ثبت نام"} />
+      <SingleBanner title={"Register"} curRoute={"Register"} />
       <div className="container px-48">
         <div className="grid grid-cols-[570px] content-center justify-center my-20">
-          <form className="login-form " style={{ direction: "rtl" }}>
-            <h2 className="mb-5 text-center text-bold text-3xl">ثبت نام</h2>
+          <form className="login-form" style={{ direction: "ltr" }}>
+            <h2 className="mb-5 text-center text-bold text-3xl">Register</h2>
             <p className="text-center mb-9">
-              قبلا ثبت نام کردید ؟{" "}
-              <Link to={"/Login"}>برای ورود کلیک کنید</Link>
+              Do you have account ?{" "}
+              <Link to={"/Login"}>login here</Link>
             </p>
 
             <div className="flex flex-col gap-1">
               <label htmlFor="" className="mb-3" style={{ color: "#77838F" }}>
-                نام کاربری *
+                username *
               </label>
-              <input className="form-control mb-3" type="text" />
+              <input className="form-control mb-3" type="text" style={{direction: 'ltr'}} />
             </div>
 
             <div className="flex flex-col gap-1">
               <label htmlFor="" className="mb-3" style={{ color: "#77838F" }}>
-                نام  
+                name  
               </label>
-              <input className="form-control mb-3" type="text" />
+              <input className="form-control mb-3" type="text" style={{direction: 'ltr'}} />
             </div>
 
             <div className="flex flex-col gap-1">
               <label htmlFor="" className="mb-3" style={{ color: "#77838F" }}>
-                شماره 
+                phone 
               </label>
-              <input className="form-control mb-3" type="text" />
+              <input className="form-control mb-3" type="text" style={{direction: 'ltr'}} />
             </div>
 
             <div className="flex flex-col gap-1 mt-5">
               <label htmlFor="" className="mb-3" style={{ color: "#77838F" }}>
-                ایمیل *
+                email *
               </label>
-              <input className="form-control" type="text" />
+              <input className="form-control" type="text" style={{direction: 'ltr'}} />
             </div>
 
             <div className="flex flex-col gap-1 mt-5">
               <label htmlFor="" className="mb-3" style={{ color: "#77838F" }}>
-                رمز عبور *
+                password *
               </label>
-              <input className="form-control" type="text" />
+              <input className="form-control" type="text" style={{direction: 'ltr'}} />
             </div>
 
             <div className="flex flex-col gap-1 mt-5">
               <label htmlFor="" className="mb-3" style={{ color: "#77838F" }}>
-                تکرار رمز عبور *
+                confirm password *
               </label>
-              <input className="form-control" type="text" />
+              <input className="form-control" type="text" style={{direction: 'ltr'}} />
             </div>
 
             <div className="flex justify-between mt-8 items-center">
               <div className="flex items-center gap-2">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="" style={{direction: 'ltr'}} />
                 <label htmlFor="" style={{ color: "#77838F" }}>
-                  با قوانین ادومل موافقم
+                  I agree
                 </label>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Register() {
               className="btn btn-main w-full mt-9 p-3 rounded"
               onClick={(e) => RegisterUser(e)}
             >
-              ورود
+              Register
             </button>
           </form>
         </div>

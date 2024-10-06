@@ -11,42 +11,42 @@ export default function Login() {
     <div>
       <Topbar />
       <Navbar />
-      <SingleBanner title={"ورود"} curRoute={"ورود"} />
+      <SingleBanner title={"Login"} curRoute={"Login"} />
 
-      <div className="container px-48">
+      <div className="container mx-auto px-48">
         <div className="grid grid-cols-[570px] content-center justify-center my-20">
-          <form className="login-form " style={{ direction: "rtl" }}>
-            <h2 className="mb-5 text-center text-bold text-3xl">ورود</h2>
+          <form className="login-form ">
+            <h2 className="mb-5 text-center text-bold text-3xl">Login</h2>
             <p className="text-center mb-9">
-              هنوز ثبت نام نکردید؟{" "}
-              <Link to={"/Register"}>برای ثبت نام کلیک کنید</Link>
+              don't have account yet ?{" "}
+              <Link to={"/Register"}>create account here</Link>
             </p>
 
             <div className="flex flex-col gap-1">
               <label htmlFor="" className="mb-3" style={{color : '#77838F'}}>
-                نام کاربری یا ایمیل *
+                username or email *
               </label>
-              <input className="form-control mb-9" type="text" />
+              <input className="form-control mb-9" type="text"  style={{direction: 'ltr'}}/>
             </div>
 
             <div className="flex flex-col gap-1">
               <label htmlFor="" className="mb-3" style={{color : '#77838F'}}>
-                رمز عبور *
+                password *
               </label>
-              <input className="form-control" type="text" />
+              <input className="form-control" type="text" style={{direction: 'ltr'}} />
             </div>
 
             <div className="flex justify-between mt-8 items-center">
               <div className="flex items-center gap-2">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id=""  style={{direction: 'ltr'}}/>
                 <label htmlFor="" style={{color : '#77838F'}} >
-                  مرا به خاطر بسپار
+                  remember me
                 </label>
               </div>
-              <Link to={'/Login'} style={{color : '#F14D5D'}}>پسورد خود را فراموش کردید؟</Link>
+              <Link to={'/Login'} style={{color : '#F14D5D'}}>forget your password?</Link>
             </div>
 
-              <button className="btn btn-main w-full mt-9 p-3 rounded" type="submit">ورود</button>
+              <button className="btn btn-main w-full mt-9 p-3 rounded" type="submit">Login</button>
 
           </form>
         </div>
