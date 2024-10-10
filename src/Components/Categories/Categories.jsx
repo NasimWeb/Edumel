@@ -4,7 +4,7 @@ import "./Categories.css";
 function Categories() {
   return (
     <div className="bg-category">
-      <div className="container mx-auto lg:px-52 mt-5 mb-24 pt-20 pb-32">
+      <div className="container mx-auto px-10 mt-5 mb-24 pt-20 pb-32">
         <div className="sec-title">
           <h2 className="text-center mb-2 font-bold text-3xl">Categories you want to learn</h2>
           <p className="text-center mb-20" style={{ color: "#77838F" }}>

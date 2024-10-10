@@ -6,7 +6,7 @@ import CourseBox from '../CourseBox/CourseBox'
 function PopularCourses() {
   
   return (
-    <div className='container mx-auto lg:px-52 mt-5 mb-24 '>
+    <div className='container mx-auto lg:px-52 mt-5 mb-24 px-10 '>
         <h2 className='text-center mb-2 font-bold text-3xl'>Popular Courses </h2>
         <p className='text-center mb-20' style={{color:'#777'}}>Discover Your Perfect Program In Our Courses.</p>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center'>
