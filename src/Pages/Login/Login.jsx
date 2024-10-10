@@ -12,9 +12,8 @@ export default function Login() {
       <Topbar />
       <Navbar />
       <SingleBanner title={"Login"} curRoute={"Login"} />
-
-      <div className="container mx-auto px-48">
-        <div className="grid grid-cols-[570px] content-center justify-center my-20">
+      <div className="container mx-auto px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[570px] content-center justify-center my-20">
           <form className="login-form ">
             <h2 className="mb-5 text-center text-bold text-3xl">Login</h2>
             <p className="text-center mb-9">

@@ -26,8 +26,8 @@ export default function Register() {
       <Topbar />
       <Navbar />
       <SingleBanner title={"Register"} curRoute={"Register"} />
-      <div className="container px-48">
-        <div className="grid grid-cols-[570px] content-center justify-center my-20">
+      <div className="container mx-auto px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[570px] content-center justify-center my-20">
           <form className="login-form" style={{ direction: "ltr" }}>
             <h2 className="mb-5 text-center text-bold text-3xl">Register</h2>
             <p className="text-center mb-9">
